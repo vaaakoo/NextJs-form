@@ -74,7 +74,7 @@ const Form = () => {
       <div className="mx-auto flex flex-row sm:gap-8 justify-center py-2">
         <form
           onSubmit={formik.handleSubmit}
-          className="mx-auto sm:w-[350px] flex flex-col justify-center gap-2"
+          className="mx-auto sm:w-[300px] flex flex-col justify-center gap-4"
         >
           <div className="bg-slate-100 rounded-xl p-8">
             {aye ? (
@@ -92,19 +92,14 @@ const Form = () => {
             )}
           </div>
           <div>
-            <label
-              className="block text-gray-700 font-medium mb-2"
-              htmlFor="email"
-            >
-              Email
-            </label>
+
             <input
               className={`shadow sm:px-4 sm:py-3  appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
                 formik.errors.email ? "border-red-500" : ""
               }`}
               id="email"
               type="email"
-              placeholder="Email"
+              placeholder="Email ..."
               onChange={handleTextChange}
               // onBlur={formik.handleBlur}
               value={formik.values.email}
@@ -116,19 +111,14 @@ const Form = () => {
             )}
           </div>
           <div>
-            <label
-              className="block text-gray-700 font-medium mb-2"
-              htmlFor="name"
-            >
-              UserName
-            </label>
+            
             <input
               className={`shadow sm:px-4 sm:py-3  appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
                 formik.errors.name ? "border-red-500" : ""
               }`}
               id="name"
               type="text"
-              placeholder="UserName"
+              placeholder="UserName ..."
               onChange={handleTextChange}
               // onBlur={formik.handleBlur}
               value={formik.values.name}
@@ -140,19 +130,14 @@ const Form = () => {
             )}
           </div>
           <div>
-            <label
-              className="block text-gray-700 font-medium mb-2"
-              htmlFor="password"
-            >
-              Password
-            </label>
+            
             <input
               className={`shadow sm:px-4 sm:py-3  appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
                 formik.errors.password ? "border-red-500" : ""
               }`}
               id="password"
               type="password"
-              placeholder="Password"
+              placeholder="Password ..."
               onChange={handlePasswordChange}
               // onBlur={formik.handleBlur}
               value={formik.values.password}
@@ -164,19 +149,14 @@ const Form = () => {
             )}
           </div>
           <div>
-            <label
-              className="block text-gray-700 font-medium mb-2"
-              htmlFor="confirmPassword"
-            >
-              Confirm Password
-            </label>
+            
             <input
               className={`shadow sm:px-4 sm:py-3  appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
                 formik.errors.confirmPassword ? "border-red-500" : ""
               }`}
               id="confirmPassword"
               type="password"
-              placeholder="Confirm Password"
+              placeholder="Confirm Password ..."
               onChange={handlePasswordChange}
               // onBlur={formik.handleBlur}
               value={formik.values.confirmPassword}
